@@ -9,9 +9,10 @@ import FAQs from "./Components/UI/FAQs";
 import Collaborate from "./Components/UI/Collaborate";
 import Pricing from "./Components/UI/Pricing";
 import Services from "./Components/UI/Services";
-import Silder from "./Components/UI/Silder";
+import Slider from "./Components/UI/Slider";
 import Solution from "./Components/UI/Solution";
 import WhyChooseUs from "./Components/UI/WhyChooseUs";
+import Footer from "./Components/UI/Footer"; 
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
       <Testimonials/>
       <FAQs/>
       <Collaborate/>
-      <Silder/>
+      <Slider/>
       <Services/>
       <Facts/>
       <WhyChooseUs/>
