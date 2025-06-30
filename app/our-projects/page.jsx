@@ -23,14 +23,14 @@ export default function OurProjectsPage() {
 
   const particlesLoaded = useCallback(async (container) => { }, []);
 
-  // Gallery images
+  // Gallery images with project details
   const images = [
-    { id: '1', src: '/our-projects/project-1.webp' },
-    { id: '2', src: '/our-projects/project-2.webp' },
-    { id: '3', src: '/our-projects/project-3.webp' },
-    { id: '4', src: '/our-projects/project-4.webp' },
-    { id: '5', src: '/our-projects/project-5.png' },
-    { id: '6', src: '/our-projects/project-6.webp' },
+    { id: '1', src: '/our-projects/1.png', title: "Project Alpha", category: "Web Development" },
+    { id: '2', src: '/our-projects/2.png', title: "Project Beta", category: "Mobile App" },
+    { id: '3', src: '/our-projects/3.png', title: "Project Gamma", category: "UI/UX Design" },
+    { id: '4', src: '/our-projects/4.png', title: "Project Delta", category: "E-commerce" },
+    { id: '5', src: '/our-projects/5.png', title: "Project Epsilon", category: "SaaS Platform" },
+    { id: '6', src: '/our-projects/6.png', title: "Project Zeta", category: "Digital Marketing" },
   ];
   const [selectedId, setSelectedId] = useState(null);
 
@@ -89,28 +89,87 @@ export default function OurProjectsPage() {
 
         <Slider />
 
-        {/* --- Animated Project Gallery --- */}
-        <section className="bg-white relative z-20 w-full mx-auto py-16 px-24">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {images.map((img) => (
-              <motion.div
-                key={img.id}
-                layoutId={img.id}
-                onClick={() => setSelectedId(img.id)}
-                className="cursor-pointer overflow-hidden rounded-2xl shadow-lg bg-white"
-                whileHover={{ scale: 1.04, boxShadow: '0 8px 32px rgba(0,0,0,0.12)' }}
-                transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-              >
-                <Image
-                  src={img.src}
-                  alt={`Project ${img.id}`}
-                  width={200}
-                  height={100}
-                  className="w-full h-auto object-cover"
-                  priority={img.id === '1'}
-                />
-              </motion.div>
-            ))}
+        {/* --- Portfolio Style Project Gallery --- */}
+        <section className="relative min-h-screen bg-white">
+          {/* Grid pattern overlay */}
+          <div className="absolute inset-0 bg-grid-white/[0.1] bg-[size:50px_50px]"></div>
+          
+          {/* Content */}
+          <div className="relative z-10 py-12 sm:py-16 lg:py-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              
+              {/* Header */}
+              <div className="text-center mb-12 sm:mb-14 lg:mb-16">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#283A64] mb-4 sm:mb-6">
+                  Our <span className="text-cyan-400">Portfolio</span>
+                </h2>
+                <p className="text-base sm:text-lg max-w-3xl mx-auto px-4">
+                  Using latest technologies and 100% satisfaction guarantees, we ensure that we always bring out the best of your brand.
+                </p>
+              </div>
+
+              {/* Portfolio Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                {images.map((img) => (
+                  <div key={img.id} className="group relative">
+                    {/* Portfolio Item Container */}
+                    <div className="relative bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-600 transition-all duration-300">
+                      
+                      {/* Image Container with full scroll effect */}
+                      <div className="relative w-full h-64 sm:h-72 lg:h-80 overflow-hidden">
+                        <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:-translate-y-[70%]">
+                          <Image
+                            src={img.src}
+                            alt={img.title}
+                            width={600}
+                            height={800}
+                            className="w-full h-auto object-cover object-top cursor-pointer"
+                            style={{ minHeight: '400px' }}
+                            onClick={() => setSelectedId(img.id)}
+                          />
+                        </div>
+                        
+                        {/* Gradient overlay for better text readability */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        
+                        {/* Hover overlay with project info */}
+                        <div className="absolute inset-0 flex items-end p-4 sm:p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <div className="text-white">
+                            <span className="inline-block px-2 sm:px-3 py-1 text-xs font-semibold rounded-full mb-2" style={{ backgroundColor: '#283A64' }}>
+                              {img.category}
+                            </span>
+                            <h3 className="text-base sm:text-lg font-bold">{img.title}</h3>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Project Info */}
+                      <div className="p-4 sm:p-6">
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <span className="inline-block px-2 sm:px-3 py-1 text-xs font-semibold text-white bg-gray-800 rounded-full mb-2">
+                              {img.category}
+                            </span>
+                            <h3 className="text-white text-base sm:text-lg font-semibold group-hover:text-[#283A64] transition-colors duration-300">
+                              {img.title}
+                            </h3>
+                          </div>
+                          
+                          {/* View Project Arrow */}
+                          <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div className="w-8 h-8 rounded-full flex items-center justify-center border border-gray-600 group-hover:border-[#283A64] transition-colors duration-300">
+                              <svg className="w-4 h-4 text-gray-400 group-hover:text-[#283A64] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7V17" />
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 

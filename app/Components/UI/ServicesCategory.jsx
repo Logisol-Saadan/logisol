@@ -37,7 +37,7 @@ export default function ServicesCategory({ className = "", children }) {
             </a>
           </li>
           <li>
-            <a href="/services/graphic-design" className="flex items-center justify-between py-4 text-[#283A64] font-medium hover:text-cyan-400 transition-colors">
+            <a href="/services/graphics-designing-services" className="flex items-center justify-between py-4 text-[#283A64] font-medium hover:text-cyan-400 transition-colors">
               Graphic Design
               <span className="ml-2">↗</span>
             </a>

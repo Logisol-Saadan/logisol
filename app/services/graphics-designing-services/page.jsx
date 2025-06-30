@@ -581,7 +581,7 @@ function WebDevFAQ() {
 
   return (
     <section className="w-full max-w-4xl mx-auto mt-16 mb-8">
-      <h2 className="text-5xl md:text-4xl font-extrabold text-[#283A64] mb-8 text-center">
+      <h2 className="text-4xl md:text-3xl font-extrabold text-[#283A64] mb-8 text-center">
         Frequently Asked Questions (<span className="text-cyan-400">FAQs</span>)
       </h2>
       <div className="flex flex-col gap-5">
@@ -600,7 +600,7 @@ function WebDevFAQ() {
                 aria-expanded={open}
                 aria-controls={`faq-panel-${idx}`}
               >
-                <span className="font-bold text-sm md:text-md text-[#283A64]">
+                <span className="font-bold text-lg md:text-xl text-[#283A64]">
                   {faq.question}
                 </span>
                 <span className="ml-4">
