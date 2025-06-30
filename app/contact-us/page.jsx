@@ -117,12 +117,16 @@ export default function ContactUsPage() {
           >
             Contact <span className="text-cyan-400">Us</span>
           </h1>
-          <div className="flex items-center justify-center mt-2">
+          <div className="flex flex-row items-center justify-center mt-2 gap-x-2">
             <a
               href="/"
-              className="text-lg font-semibold text-[#283A64] hover:underline flex items-center gap-2"
-            > 
-              Home <span className="text-cyan-400"><span className="text-2xl">*</span> Contact Us</span> 
+              className="text-lg font-semibold text-[#283A64]"
+            >
+              Home{""}
+            </a>
+            <span className="text-2xl font-semibold">{" > "}</span>
+            <a href="/contact-us" className="text-lg text-cyan-400 font-semibold">
+              Contact Us
             </a>
           </div>
         </div>

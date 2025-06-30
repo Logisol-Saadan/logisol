@@ -23,7 +23,7 @@ export default function AboutPage() {
     await loadSlim(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container) => {}, []);
+  const particlesLoaded = useCallback(async (container) => { }, []);
 
   return (
     <div className={font.className}>
@@ -44,12 +44,16 @@ export default function AboutPage() {
           >
             About <span className="text-cyan-400">Us</span>
           </h1>
-          <div className="flex items-center justify-center mt-2">
+          <div className="flex flex-row items-center justify-center mt-2 gap-x-2">
             <a
               href="/"
-              className="text-lg font-semibold text-cyan-400 hover:underline flex items-center gap-2"
+              className="text-lg font-semibold text-[#283A64]"
             >
-              Home <span className="text-cyan-400 text-2xl">*</span> About Us
+              Home{""}
+            </a>
+            <span className="text-2xl font-semibold">{" > "}</span>
+            <a href="/about-us-2" className="text-lg text-cyan-400 font-semibold">
+              About Us
             </a>
           </div>
         </div>

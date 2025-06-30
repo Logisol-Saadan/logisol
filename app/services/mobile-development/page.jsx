@@ -57,6 +57,22 @@ export default function MobileDevelopmentServices() {
             Mobile App Development That{" "}
             <span className="text-cyan-400">Drives Business Success</span>
           </h1>
+          <div className="flex flex-row items-center justify-center mt-2 gap-x-2">
+            <a
+              href="/"
+              className="text-lg font-semibold text-[#283A64]"
+            >
+              Home{""}
+            </a>
+            <span className="text-2xl font-semibold">{" > "}</span>
+            <a href="/services" className="text-lg text-cyan-400 font-semibold">
+              Services
+            </a>
+            <span className="text-2xl font-semibold">{" > "}</span>
+            <a href="/services/mobile-development" className="text-lg text-cyan-400 font-semibold">
+              Mobile Development
+            </a>
+          </div>
         </div>
       </section>
       <Slider />
@@ -563,55 +579,55 @@ export default function MobileDevelopmentServices() {
               </p>
               <ul className="list-disc ml-6 mb-6 text-sm md:text-md text-[#222] space-y-2">
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Healthcare & Wellness
                   </span>{" "}
                   – Telemedicine, appointment scheduling, fitness tracking
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     E-commerce & Retail
                   </span>{" "}
                   – Catalog management, personalized shopping, mobile checkout
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Education & E-Learning
                   </span>{" "}
                   – Online courses, student tracking, interactive quizzes
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Finance & Fintech
                   </span>{" "}
                   – Mobile banking, budgeting, investment tracking
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Transportation & Logistics
                   </span>{" "}
                   – Delivery routing, live GPS, fleet tracking
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Entertainment & OTT
                   </span>{" "}
                   – Content streaming, subscriptions, user profiles
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Real Estate & PropTech
                   </span>{" "}
                   – Property listings, 3D tours, lead capture forms
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Manufacturing & Field Services
                   </span>{" "}
                   – Workflow apps, inventory tracking, job assignments
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Travel & Hospitality
                   </span>{" "}
                   – Booking apps, travel guides, location-based services
@@ -662,43 +678,43 @@ export default function MobileDevelopmentServices() {
 
               <ul className="list-disc ml-6 mb-6 text-sm md:text-md text-[#222] space-y-2">
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Frontend:
                   </span>{" "}
                   Flutter, React Native, Kotlin, Swift
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Backend:
                   </span>{" "}
                   Node.js, Express, Firebase
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Database:
                   </span>{" "}
                   MongoDB, MySQL, PostgreSQL
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Cloud/Hosting:
                   </span>{" "}
                   AWS, Azure, Docker, Vercel
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     DevOps & Tools:
                   </span>{" "}
                   GitHub, Postman, Jira, Figma, Notion
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     CI/CD:
                   </span>{" "}
                   GitHub Actions, Bitbucket Pipelines, Jenkins
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Security:
                   </span>{" "}
                   OAuth 2.0, SSL, JWT, GDPR Compliance
@@ -720,7 +736,7 @@ export default function MobileDevelopmentServices() {
             {/* Ready to Build Your Mobile App? */}
             <div>
               <h2
-                className="text-4xl md:text-5xl font-extrabold mb-6 text-[#283A64]"
+                className="text-4xl md:text-3xl font-extrabold mb-6 text-[#283A64]"
                 style={{ lineHeight: "1.15" }}
               >
                 Ready to{" "}
@@ -838,7 +854,7 @@ function WebDevFAQ() {
 
   return (
     <section className="w-full max-w-4xl mx-auto mt-16 mb-8">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-[#283A64] mb-8 text-center">
+      <h2 className="text-4xl md:text-3xl font-extrabold text-[#283A64] mb-8 text-center">
         Frequently Asked Questions (<span className="text-cyan-400">FAQs</span>)
       </h2>
       <div className="flex flex-col gap-5">

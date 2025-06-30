@@ -21,7 +21,7 @@ export default function WebDevelopmentServices() {
     await loadSlim(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container) => {}, []);
+  const particlesLoaded = useCallback(async (container) => { }, []);
 
   const cardVariants = {
     hidden: { opacity: 0, y: 60 },
@@ -53,18 +53,23 @@ export default function WebDevelopmentServices() {
           <h1
             className={`${headingFont.className} text-6xl md:text-7xl font-extrabold text-[#283A64] text-center mb-6`}
           >
-            Custom <span className="text-cyan-400">Web Development</span>{" "}
+            Custom <span className="text-cyan-400"><br />Web Development <br /></span>{" "}
             Services
           </h1>
-          <div className="flex items-center justify-center mt-2">
+          <div className="flex flex-row items-center justify-center mt-2 gap-x-2">
             <a
               href="/"
-              className="text-lg font-semibold text-[#283A64] hover:underline flex items-center gap-2"
+              className="text-lg font-semibold text-[#283A64]"
             >
-              Home{" "}
-              <span className="text-cyan-400">
-                <span className="text-2xl">*</span> Web Development
-              </span>
+              Home{""}
+            </a>
+            <span className="text-2xl font-semibold">{" > "}</span>
+            <a href="/services" className="text-lg text-cyan-400 font-semibold">
+              Services
+            </a>
+            <span className="text-2xl font-semibold">{" > "}</span>
+            <a href="/services/web-development" className="text-lg text-cyan-400 font-semibold">
+              Web Development
             </a>
           </div>
         </div>
@@ -108,7 +113,7 @@ export default function WebDevelopmentServices() {
             {/* Why Our Web Development Services Stand Out */}
             <div>
               <h2
-                className="text-4xl md:text-5xl font-extrabold mb-6 text-[#283A64]"
+                className="text-4xl md:text-3xl font-extrabold mb-6 text-[#283A64]"
                 style={{ lineHeight: "1.15" }}
               >
                 Why Our{" "}
@@ -118,7 +123,7 @@ export default function WebDevelopmentServices() {
                 </span>{" "}
                 <span className="text-[#283A64]">Stand Out</span>
               </h2>
-              <ul className="list-disc ml-6 mb-6 text-lg text-[#222]">
+              <ul className="list-disc ml-6 mb-6 text-md text-[#222]">
                 <li>
                   We take time to learn about your business and your customers.
                   That's how we build the right website for your needs.
@@ -128,20 +133,20 @@ export default function WebDevelopmentServices() {
               </ul>
               <div className="space-y-6">
                 <div>
-                  <h3 className="font-bold text-2xl mb-1">
+                  <h3 className="font-bold text-xl mb-1">
                     Custom Design Made for Your Brand
                   </h3>
-                  <p className="text-base md:text-lg">
+                  <p className="text-sm md:text-md">
                     Each website starts from a blank page. No copied designs. We
                     create layouts and experiences that fit your brand, connect
                     with your audience and support your business goals.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-2xl mb-1">
+                  <h3 className="font-bold text-xl mb-1">
                     Google-Friendly Website Structure
                   </h3>
-                  <p className="text-base md:text-lg">
+                  <p className="text-sm md:text-md">
                     From day one, we build your website with a Google-friendly
                     SEO structure that improves visibility and organic traffic.
                     We focus on fast loading speed, clean coding, proper use of
@@ -149,20 +154,20 @@ export default function WebDevelopmentServices() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-2xl mb-1">
+                  <h3 className="font-bold text-xl mb-1">
                     Works on All Screens
                   </h3>
-                  <p className="text-base md:text-lg">
+                  <p className="text-sm md:text-md">
                     Your website will look great and work well on any device.
                     Whether someone uses a phone, tablet or computer, the
                     experience will be smooth and consistent.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-2xl mb-1">
+                  <h3 className="font-bold text-xl mb-1">
                     Easy to Grow and Expand
                   </h3>
-                  <p className="text-base md:text-lg">
+                  <p className="text-sm md:text-md">
                     We use scalable tools that make it simple to add new
                     features—or even integrate with custom-designed mobile apps
                     down the line. Your website can grow as your business grows
@@ -170,10 +175,10 @@ export default function WebDevelopmentServices() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-2xl mb-1">
+                  <h3 className="font-bold text-xl mb-1">
                     Strong Built-In Security
                   </h3>
-                  <p className="text-base md:text-lg">
+                  <p className="text-sm md:text-md">
                     We take your website's security seriously, and apply best
                     practices whether you need a portfolio site or a secure
                     graphic design showcase. We use safe data storage, protected
@@ -182,10 +187,10 @@ export default function WebDevelopmentServices() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-2xl mb-1">
+                  <h3 className="font-bold text-xl mb-1">
                     Connects with Other Business Tools
                   </h3>
-                  <p className="text-base md:text-lg">
+                  <p className="text-sm md:text-md">
                     Whether you use CRM tools, payment gateways, or video
                     marketing platforms, we ensure seamless integration across
                     systems. Everything works together smoothly.
@@ -196,44 +201,44 @@ export default function WebDevelopmentServices() {
             {/* Who Do We Work With */}
             <div>
               <h2
-                className="text-4xl md:text-5xl font-extrabold mb-6 text-[#283A64]"
+                className="text-4xl md:text-3xl font-extrabold mb-6 text-[#283A64]"
                 style={{ lineHeight: "1.15" }}
               >
                 Who Do We <span className="text-cyan-400">Work With</span>
               </h2>
               <ul className="list-disc ml-6 mb-6 text-lg text-[#222]">
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Startups
                   </span>{" "}
                   - Quick setup and first product launches
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Small Businesses
                   </span>{" "}
                   - Creating online presence and attracting customers
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Medium Businesses
                   </span>{" "}
                   - and first product launches
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Enterprises
                   </span>{" "}
                   - Building smart systems and automated solutions
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     Agencies
                   </span>{" "}
                   - Providing white-label development support
                 </li>
                 <li>
-                  <span className="text-cyan-400 hover:text-[#283A64]">
+                  <span className="text-[#283A64]">
                     E-Commerce Brands
                   </span>{" "}
                   - Creating and managing strong online stores
@@ -245,13 +250,12 @@ export default function WebDevelopmentServices() {
             {/* Why Our Web Development Services Stand Out */}
             <div>
               <h2
-                className="text-4xl md:text-5xl font-extrabold mb-3 text-[#283A64]"
+                className="text-4xl md:text-3xl font-extrabold text-[#283A64]"
                 style={{ lineHeight: "1.15" }}
               >
                 Our{" "}
                 <span className="text-cyan-400">
-                  Web Development
-                  <br className="hidden md:inline" /> Services
+                  Web Development Services
                 </span>{" "}
                 <span className="text-[#283A64]">Include</span>
               </h2>
@@ -479,13 +483,13 @@ export default function WebDevelopmentServices() {
             {/* Why Choose Logisol Technologies */}
             <div>
               <h2
-                className="text-4xl md:text-5xl font-extrabold mb-6 text-[#283A64]"
+                className="text-4xl md:text-3xl font-extrabold mb-6 text-[#283A64]"
                 style={{ lineHeight: "1.15" }}
               >
                 Why Choose{" "}
                 <span className="text-cyan-400">Logisol Technologies?</span>
               </h2>
-              <ul className="list-disc ml-6 mb-6 text-lg text-[#222]">
+              <ul className="list-disc ml-6 mb-6 text-md text-[#222]">
                 <li>100% custom designs made for your business</li>
                 <li>Websites built for speed, SEO and performance</li>
                 <li>Strong security built from the start</li>
@@ -496,7 +500,7 @@ export default function WebDevelopmentServices() {
             {/* Why Choose Logisol Technologies */}
             <div>
               <h2
-                className="text-4xl md:text-5xl font-extrabold mb-6 text-[#283A64]"
+                className="text-4xl md:text-3xl font-extrabold mb-6 text-[#283A64]"
                 style={{ lineHeight: "1.15" }}
               >
                 LET’S <span className="text-cyan-400">COLLABORATE</span>
@@ -605,7 +609,7 @@ function WebDevFAQ() {
 
   return (
     <section className="w-full max-w-4xl mx-auto mt-16 mb-8">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-[#283A64] mb-8 text-center">
+      <h2 className="text-4xl md:text-3xl font-extrabold text-[#283A64] mb-8 text-center">
         Frequently Asked Questions (<span className="text-cyan-400">FAQs</span>)
       </h2>
       <div className="flex flex-col gap-5">
@@ -614,9 +618,8 @@ function WebDevFAQ() {
           return (
             <div
               key={idx}
-              className={`border border-gray-300 rounded-2xl bg-white transition-all duration-300 ${
-                open ? "shadow-lg" : ""
-              }`}
+              className={`border border-gray-300 rounded-2xl bg-white transition-all duration-300 ${open ? "shadow-lg" : ""
+                }`}
             >
               <button
                 className="w-full flex items-center justify-between px-6 py-5 text-left focus:outline-none"
@@ -637,9 +640,8 @@ function WebDevFAQ() {
               </button>
               <div
                 id={`faq-panel-${idx}`}
-                className={`px-6 pb-5 text-gray-800 text-base transition-all duration-300 ${
-                  open ? "block" : "hidden"
-                }`}
+                className={`px-6 pb-5 text-gray-800 text-base transition-all duration-300 ${open ? "block" : "hidden"
+                  }`}
               >
                 {faq.answer}
               </div>

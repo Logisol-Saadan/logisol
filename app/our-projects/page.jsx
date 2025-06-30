@@ -21,7 +21,7 @@ export default function OurProjectsPage() {
     await loadSlim(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container) => {}, []);
+  const particlesLoaded = useCallback(async (container) => { }, []);
 
   // Gallery images
   const images = [
@@ -72,15 +72,16 @@ export default function OurProjectsPage() {
             >
               Our <span className="text-cyan-400">Projects</span>
             </h1>
-            <div className="flex items-center justify-center mt-2">
+            <div className="flex flex-row items-center justify-center mt-2 gap-x-2">
               <a
                 href="/"
-                className="text-lg font-semibold text-[#283A64] hover:underline flex items-center gap-2"
+                className="text-lg font-semibold text-[#283A64]"
               >
-                Home{" "}
-                <span className="text-cyan-400">
-                  <span className="text-2xl">*</span> Our Projects
-                </span>
+                Home{""}
+              </a>
+              <span className="text-2xl font-semibold">{" > "}</span>
+              <a href="/our-projects" className="text-lg text-cyan-400 font-semibold">
+                Our Projects
               </a>
             </div>
           </div>

@@ -38,7 +38,7 @@ const cardVariants = {
 export default function TestimonialsSection() {
   return (
     <section className="w-full">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-[#283A64] mb-8">
+      <h2 className="text-4xl md:text-3xl font-extrabold text-[#283A64] mb-8">
         What <span className="text-cyan-400">Clients</span> Are Saying
       </h2>
       <div className="flex flex-col gap-8 max-w-4xl mx-auto">

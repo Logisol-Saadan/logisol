@@ -55,15 +55,20 @@ export default function GraphicsDesigningServices() {
           >
             Graphic Designing <span className="text-cyan-400">Services</span>
           </h1>
-          <div className="flex items-center justify-center mt-2">
+          <div className="flex flex-row items-center justify-center mt-2 gap-x-2">
             <a
               href="/"
-              className="text-lg font-semibold text-[#283A64] hover:underline flex items-center gap-2"
+              className="text-lg font-semibold text-[#283A64]"
             >
-              Home * Services
-              <span className="text-cyan-400">
-                <span className="text-2xl">*</span> Graphics Designing
-              </span>
+              Home{""}
+            </a>
+            <span className="text-2xl font-semibold">{" > "}</span>
+            <a href="/services" className="text-lg text-cyan-400 font-semibold">
+              Services
+            </a>
+            <span className="text-2xl font-semibold">{" > "}</span>
+            <a href="/services/graphics-designing-services" className="text-lg text-cyan-400 font-semibold">
+              Graphics Designing
             </a>
           </div>
         </div>

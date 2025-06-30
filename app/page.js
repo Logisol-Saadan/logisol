@@ -19,21 +19,18 @@ export default function Home() {
     <div>
       <Navbar/>
       <Hero/>
+      <Slider/>
       <AboutUs/>
+      <Services/>
+      <WhyChooseUs/>
+      <Solution/>
       <Facts/>
+      <Pricing/>
       <Work/>
       <Testimonials/>
       <FAQs/>
-      <Collaborate/>
-      <Slider/>
-      <Services/>
-      <Facts/>
-      <WhyChooseUs/>
-      <Solution/>
-      <Work/>
-      <Pricing/>
-      <FAQs/>
       <Blog/>
+      <Collaborate/>
       <Footer/>
     </div>
   );
